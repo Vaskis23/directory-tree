@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .tree {
+            list-style-type: "┠ ";
+             font-size: 64px;
+        }
+        .folder {
+            color: white;
+            background-image: url(img/Oxygen-Icons.org-Oxygen-Actions-document-open.64.png);
+            background-repeat: no-repeat;
+            padding: 24px 0px 24px 72px;
+            line-height: 8px;
+        }
+        .folder:hover {
+            background-color: #999;
+            transition: 0.5s;
+        }
+        .folder:last-child {
+            list-style-type: "┖ ";
+        }
+        .empty {
+            background-image: url(img/Oxygen-Icons.org-Oxygen-Actions-document-open-folder.64.png);
+        }
+        .name {
+            font-size: 18px;
+        }
+        .file {
+            color: white;
+            background-image: url(img/Oxygen-Icons.org-Oxygen-Actions-document-properties.64.png);
+            background-repeat: no-repeat;
+            padding: 24px 0px 24px 72px;
+            line-height: 8px;
+        }
+        .file:hover {
+            background-color: red;
+            transition: 0.5s;
+        }
+        .file:last-child {
+            list-style-type: "┖ ";
+        }
+    </style> 
+</head>
+<body>
+    <ul class="tree">
+        <li class="folder"><div class="name">Project DONE</div>
+            <ul class="tree">
+                <li class="file"><div class="name">file 1</div></li>
+                <li class="file"><div class="name">file 2</div></li>
+            </ul>
+        </li>
+        <li class="folder"><div class="name">Project Now</div>
+            <ul class="tree">
+                <li class="file"><div class="name">file 1</div></li>
+                <li class="file"><div class="name">file 2</div></li>
+            </ul>
+        </li>
+        <li class="folder empty"><div class="name">Project TBD</div>
+            <ul class="tree">
+                <li class="file"><div class="name">file 1</div></li>
+                <li class="file"><div class="name">file 2</div></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
